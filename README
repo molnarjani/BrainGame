@@ -20,4 +20,9 @@ Some screens of gameplay:
   http://imgur.com/YALKrew
   http://imgur.com/PTdBQZE
 
+Requirements:
+  - The 3 files should be in the same directory
+  - Kivy 1.8.0 Python3.3 version, it should work with the others as well
+  - Tried it on Windows and Linux, not tested on Mac! (but it could work)
+  
 Hope you enjoy playing it!
