@@ -1,6 +1,17 @@
-BrainGame is a rather challenging game, written in python with kivy.
+BrainGame is a rather challenging game, written in Python with kivy.
 
 I made this game for the kivycontest#2014, and i pretty much got in love with kivy :)
 (This is my first ever written kivy aplication)
+
+The point of the game is to press the button, which spell text's color correctly.
+Which is challenging because of the Stroop effect.
+
+"In psychology, the Stroop effect is a demonstration of interference in the reaction time of a task.
+When the name of a color (e.g., "blue," "green," or "red") is printed in a color
+not denoted by the name (e.g., the word "red" printed in blue ink instead of red ink),
+naming the color of the word takes longer and is more prone to errors than when
+the color of the ink matches the name of the color."
+
+Correct answers worth 1 point, wrong ones give you -1 point.
 
 Hope you enjoy playing it!
