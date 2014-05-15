@@ -1,0 +1,50 @@
+AddButtonLayout:
+
+<AddButtonLayout@BoxLayout>:
+	orientation: 'vertical'
+	FloatLayout:
+		Label:
+			font_size: 32
+			text: str(root.colortext)
+			size: 100, 100
+			pos: root.center_x - self.width / 2, root.center_y -self.height / 2 + 10
+			color: root.colorvalue1 , root.colorvalue2, root.colorvalue3, 1
+			canvas.before:
+				Color:
+					rgba: 0, 0, 0, 1
+		Label:
+			font_size: 40
+			text: 'SCORE: ' + str(root.playerscore)
+			size: 40, 40
+			pos: 0, root.top - self.height / 2 - 20
+			color: 0.165, 0.631, 0.596, 1
+		Label:
+			font_size: 16
+			text: 'Press the button, which\ncorrectly describes the text\'s colour!'
+			color: 1,1,1,root.hint_opacity
+			halign: 'center'
+		RelativeLayout:
+			canvas:
+				Rectangle:
+					source: 'logo.png'
+					size: 200, 100
+					pos: root.width / 2 - 100, root.top - self.height / 2 - 20
+	BoxLayout:
+		Button:
+			background_color: 0.0275, 0.2118, 0.2588, 1
+			size_hint_y: None
+			font_size: 24
+			height: '80dp'
+			text: str(root.btn1_text)
+			color: root.btn1_colorvalue1, root.btn1_colorvalue2, root.btn1_colorvalue3, 1
+			on_press: root.jarakeksz(self.text)
+			on_release: root.select_random()
+		Button:
+			background_color: 0.0275, 0.2118, 0.2588, 1
+			size_hint_y: None
+			font_size: 24
+			height: '80dp'
+			text:  str(root.btn2_text)
+			color: root.btn2_colorvalue1, root.btn2_colorvalue2, root.btn2_colorvalue3, 1
+			on_press: root.jarakeksz(self.text)
+			on_release: root.select_random()
