@@ -91,9 +91,13 @@ class AddButtonLayout(BoxLayout):
 		if self.random_btn == 0:
 			self.btn1_text = self.COLOR_NAME_TABLE[self.random_value] 
 			self.btn2_text = random.choice(self.COLOR_NAME_TABLE)
+			while self.btn2_text == self.btn1_text:
+				self.btn2_text = random.choice(self.COLOR_NAME_TABLE)
 		else:
 			self.btn1_text = random.choice(self.COLOR_NAME_TABLE)
 			self.btn2_text = self.COLOR_NAME_TABLE[self.random_value]
+			while self.btn1_text == self.btn2_text:
+				self.btn1_text = random.choice(self.COLOR_NAME_TABLE)
 			
 		#random color for btn1
 		self.btn1_color = random.choice(self.COLOR_NAME_TABLE)
